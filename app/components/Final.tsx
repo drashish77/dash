@@ -11,7 +11,7 @@ const AppointmentPage = async () => {
         Todays Appointment list
       </h1>
 
-      <div className="overflow-x-auto no-scrollbar">
+      <div className="overflow-x-auto ">
         <div className="p-1.5 px-5 min-w-full inline-block align-middle">
           <div className="border rounded-3xl md:rounded-[2rem] shadow overflow-hidden dark:border-gray-700 dark:shadow-gray-900">
             <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700 table-auto">
