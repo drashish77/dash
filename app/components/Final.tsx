@@ -9,33 +9,33 @@ const Final = async () => {
   const { appointments } = await getData();
 
   return (
-    <div className="m-20 p-5 border rounded-[3rem]">
-      <h1 className="py-6 px-5 text-2xl md:text-3xl font-medium text-gray-600 dark:text-gray-400">
+    <div className="m-2 mt-5  md:m-10 p-2 md:p-5 pb-10 border rounded-3xl md:rounded-[3rem]">
+      <h1 className="py-3 pb-4 md:py-6 px-5 text-2xl md:text-3xl font-medium text-gray-600 dark:text-gray-400">
         Todays Appointment list
       </h1>
       <div className="flex flex-col">
         <div className="-m-1.5 overflow-x-auto">
           <div className="p-1.5 px-5 min-w-full inline-block align-middle">
             <div className="border rounded-[2rem] shadow overflow-hidden dark:border-gray-700 dark:shadow-gray-900">
-              <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+              <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700 table-auto">
                 <thead className="bg-gray-50 dark:bg-gray-700">
                   <tr>
-                    <th scope="col" className="th">
+                    <th scope="col" className="th-mobile md:th">
                       Name
                     </th>
-                    <th scope="col" className="th">
+                    <th scope="col" className="th-mobile md:th">
                       Date
                     </th>
-                    <th scope="col" className="th">
+                    <th scope="col" className="th-mobile md:th">
                       Time
                     </th>
-                    <th scope="col" className="th">
+                    <th scope="col" className="th-mobile md:th">
                       Doctor
                     </th>
-                    <th scope="col" className="th">
+                    <th scope="col" className="th-mobile md:th">
                       Injury
                     </th>
-                    <th scope="col" className="th text-center">
+                    <th scope="col" className="th-mobile md:th text-center">
                       Action
                     </th>
                   </tr>
@@ -43,7 +43,7 @@ const Final = async () => {
                 <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
                   {appointments.map((i: AppointmentType, index: number) => (
                     <tr key={index}>
-                      <td className="px-6 py-4 td text-gray-800 dark:text-gray-200 flex items-center">
+                      <td className="px-6 py-2 md:px-6 md:py-4 td text-gray-800 dark:text-gray-200 flex items-center">
                         <div
                           className={`w-12 h-12  rounded-full mr-4 ${
                             index % 2 ? "bg-gray-400" : "bg-stone-500"
@@ -58,15 +58,15 @@ const Final = async () => {
                           </p>
                         </div>
                       </td>
-                      <td className="px-6 py-4 td ">
+                      <td className="px-6 py-2 md:px-6 md:py-4 td ">
                         <FcCalendar className="inline mb-0.5 mr-2 " />
                         {i.appointment_date}
                       </td>
-                      <td className="px-6 py-4 td  ">
+                      <td className="px-6 py-2 md:px-6 md:py-4 td  ">
                         <MdOutlineTimer className="inline mb-0.5 mr-2" />
                         {i.appointment_time}
                       </td>
-                      <td className="px-6 py-4 td capitalize">
+                      <td className="px-6 py-2 md:px-6 md:py-4 td capitalize">
                         <MdStars
                           className={`inline mb-0.5 mr-2  ${
                             index % 2 ? "text-orange-500" : "text-green-600"
