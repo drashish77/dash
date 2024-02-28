@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Patients Appointment Dashboard
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This project is a Patients Appointment Dashboard built using Next.js and styled with Tailwind CSS. It incorporates the React Icons library for icons. The dashboard features a table containing all the patients' data, ensuring mobile responsiveness and offering both light and dark modes based on the user's system preferences.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Demo/Testing url
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [https://telematum.netlify.app/](https://telematum.netlify.app/) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Next.js: Next.js is a React framework for building server-side rendered and statically generated applications.
 
-## Learn More
+- Tailwind CSS: Tailwind CSS is a utility-first CSS framework for quickly building custom designs.
+- Icons: React Icons provides popular icon packs as React components.
 
-To learn more about Next.js, take a look at the following resources:
+## Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Patient Data Table: Displays comprehensive patient data in a tabular format.
+- Mobile Responsiveness: Ensures optimal viewing experience across various screen sizes.
+- Light and Dark Mode: Adapts to the user's system preferences, offering both light and dark modes for enhanced usability.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Setup/Installation
 
-## Deploy on Vercel
+- Clone the repository.
+- Install dependencies using yarn.
+- Run the development server with yarn dev.
+- Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Usage
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Navigate through the patient data using the provided table.
+- Toggle between light and dark modes based on your system
